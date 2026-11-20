@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JRN.</title>
+    <title>NISPEROS_CORE_SYSTEM_v4.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -12,140 +12,226 @@
         .terminal-window { border: 1px solid #1e293b; background: #0b1120; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .accent-text { color: #38bdf8; }
         .status-online { color: #22c55e; text-shadow: 0 0 5px #22c55e; }
-        .border-tech { border-color: #1e293b; }
     </style>
 </head>
 <body class="p-4 md:p-10">
 
+    <!-- TOP NAVIGATION / SYSTEM HEADER -->
     <header class="max-w-6xl mx-auto mb-6 flex justify-between items-center text-[10px] tracking-widest uppercase border-b border-slate-800 pb-4">
         <div><span class="status-online">●</span> SYSTEM_READY</div>
         <div class="hidden md:block">JON_RANDY_NISPEROS // PORTFOLIO_OS</div>
-        <div>v2026.02.28</div>
+        <div>BUILD_2026.11</div>
     </header>
 
     <main class="max-w-6xl mx-auto terminal-window rounded-lg overflow-hidden">
-        
+
+        <!-- TERMINAL TITLE BAR -->
         <div class="bg-slate-800 px-4 py-2 flex items-center justify-between">
             <div class="flex space-x-2">
                 <div class="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
                 <div class="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
-            <div class="text-[10px] text-slate-400 font-bold italic">bash — 80x24</div>
+            <div class="text-[10px] text-slate-400 font-bold italic">bash — nispero_sys_v4</div>
         </div>
 
-        <div class="p-6 md:p-10">
-            <section class="mb-16">
+        <div class="p-6 md:p-10 space-y-16">
+
+            <!-- HERO & IDENTITY -->
+            <section>
                 <h1 class="text-3xl md:text-5xl font-bold text-white mb-2">JON RANDY M. NISPEROS</h1>
-                <p class="text-blue-400 mb-6 font-medium">> Management Information Systems (MIS) & Administrative Support Professional </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                    <div class="bg-slate-900/50 p-4 border border-slate-800 rounded">
-                        <p class="text-slate-500 mb-1">// IDENTITY_LOC</p>
-                        <p>Talavera, Nueva Ecija </p>
-                        <p>jrandynisperos@gmail.com</p>
-                        <p>0953-726-4202</p>
+                <p class="text-blue-400 mb-6 font-medium">&gt; IT Professional, Institutional Administrator &amp; Educator (Web, Campus Networks &amp; Logistics Data Systems)</p>
+                <p class="text-xs leading-relaxed text-slate-300 mb-6 max-w-4xl">
+                    Proven expertise managing enterprise school management applications, deploying campus network architectures, delivering IT/CS instruction, and optimizing high-volume warehouse inventory and supply chain data systems.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="bg-slate-900/60 p-4 border border-slate-800 rounded">
+                        <p class="text-slate-500 mb-2">// IDENTITY_LOC</p>
+                        <p class="text-slate-200"><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i>Talavera, Nueva Ecija</p>
+                        <p class="text-slate-200 mt-1"><i class="fas fa-phone mr-2 text-blue-400"></i>0954-107-6865</p>
+                        <p class="text-slate-200 mt-1"><i class="fas fa-envelope mr-2 text-blue-400"></i>jrandynisperos@gmail.com</p>
                     </div>
-                    <div class="bg-slate-900/50 p-4 border border-slate-800 rounded">
-                        <p class="text-slate-500 mb-1">// CORE_STATS</p>
-                        <p>Exp: 7+ Years </p>
-                        <p>Rank: Senior Programmer </p>
-                        <p>Clearance: Web & Systems Administrator </p>
+
+                    <div class="bg-slate-900/60 p-4 border border-slate-800 rounded">
+                        <p class="text-slate-500 mb-2">// EXTERNAL_LINKS</p>
+                        <p class="mt-1"><i class="fab fa-linkedin mr-2 text-blue-400"></i><a href="https://linkedin.com/in/jrandynisperos" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300 underline">linkedin/jrandynisperos</a></p>
+                        <p class="mt-2"><i class="fas fa-link mr-2 text-blue-400"></i><a href="https://linktr.ee/jrandynisperos" target="_blank" rel="noopener noreferrer" class="hover:text-blue-300 underline">linktr.ee/jrandynisperos</a></p>
+                    </div>
+
+                    <div class="bg-slate-900/60 p-4 border border-slate-800 rounded">
+                        <p class="text-slate-500 mb-2">// ACTIVE_DOMAINS</p>
+                        <p class="text-green-400">● Web &amp; Journal Admin (2022–2024)</p>
+                        <p class="text-blue-300 mt-1">● Campus Network &amp; IT Ops (2017–2023)</p>
+                        <p class="text-amber-300 mt-1">● Logistics &amp; Inventory (2025–2026)</p>
                     </div>
                 </div>
             </section>
 
-            <section class="mb-16">
-                <h2 class="text-lg font-bold text-white mb-6 uppercase tracking-tighter border-l-4 border-blue-500 pl-3">Project_Architecture: Online_Journal_Website </h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                    <div class="p-4 bg-slate-900 border border-dashed border-slate-700 rounded text-center">
-                        <i class="fas fa-code text-blue-500 mb-2"></i>
-                        <p class="text-[10px] font-bold text-white uppercase">Frontend</p>
-                        <p class="text-[9px]">UI/UX for Academic Research </p>
+            <!-- SYSTEM ARCHITECTURE & CORE PLATFORMS -->
+            <section>
+                <h2 class="text-lg font-bold text-white mb-6 uppercase tracking-tighter border-l-4 border-blue-500 pl-3">
+                    Core_Systems_Architecture
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-5 bg-slate-900/70 border border-dashed border-blue-500/50 rounded">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-bold text-white uppercase">01 // Web_&_Journal</span>
+                            <i class="fas fa-globe text-blue-400"></i>
+                        </div>
+                        <p class="text-blue-300 font-semibold mb-1">CGCI-IJAMET Online Journal</p>
+                        <p class="text-[11px] opacity-80 leading-relaxed">
+                            Administered institutional online journal operations, executing deployment updates and security patches alongside School Management System migrations and database optimization.
+                        </p>
                     </div>
-                    <div class="p-4 bg-slate-900 border border-dashed border-slate-700 rounded text-center">
-                        <i class="fas fa-server text-blue-500 mb-2"></i>
-                        <p class="text-[10px] font-bold text-white uppercase">Backend_Logic</p>
-                        <p class="text-[9px]">School Management System Integration </p>
+
+                    <div class="p-5 bg-slate-900/70 border border-dashed border-blue-500/50 rounded">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-bold text-white uppercase">02 // Campus_Net_Layer</span>
+                            <i class="fas fa-network-wired text-blue-400"></i>
+                        </div>
+                        <p class="text-blue-300 font-semibold mb-1">Campus Network Infrastructure</p>
+                        <p class="text-[11px] opacity-80 leading-relaxed">
+                            Architected and maintained campus-wide network connectivity, routing, and localized hardware troubleshooting across administrative offices to minimize downtime.
+                        </p>
                     </div>
-                    <div class="p-4 bg-slate-900 border border-dashed border-slate-700 rounded text-center">
-                        <i class="fas fa-database text-blue-500 mb-2"></i>
-                        <p class="text-[10px] font-bold text-white uppercase">Data_Layer</p>
-                        <p class="text-[9px]">Institutional Database Maintenance </p>
+
+                    <div class="p-5 bg-slate-900/70 border border-dashed border-blue-500/50 rounded">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-bold text-white uppercase">03 // Logistics_Data_DB</span>
+                            <i class="fas fa-boxes-stacked text-blue-400"></i>
+                        </div>
+                        <p class="text-blue-300 font-semibold mb-1">Inventory &amp; Supply Chain Ops</p>
+                        <p class="text-[11px] opacity-80 leading-relaxed">
+                            Managed inventory management databases tracking operational metrics, daily sales, and expenses while coordinating and auditing time-sensitive commercial deliveries.
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <section class="mb-16">
-                <h2 class="text-lg font-bold text-white mb-6 uppercase tracking-tighter border-l-4 border-blue-500 pl-3">Maintenance_Event_Logs </h2>
-                <div class="bg-black/20 border border-slate-800 rounded overflow-hidden">
+            <!-- EXPERIENCE & EXECUTION LOG -->
+            <section>
+                <h2 class="text-lg font-bold text-white mb-6 uppercase tracking-tighter border-l-4 border-blue-500 pl-3">
+                    Experience_Execution_Log
+                </h2>
+                <div class="bg-black/30 border border-slate-800 rounded overflow-x-auto">
                     <table class="w-full text-[11px] text-left">
-                        <thead class="bg-slate-900 text-slate-500">
+                        <thead class="bg-slate-900 text-slate-400 uppercase">
                             <tr>
-                                <th class="p-3">EVENT_ID</th>
-                                <th class="p-3">DESCRIPTION</th>
-                                <th class="p-3 text-right">STATUS</th>
+                                <th class="p-3">Period</th>
+                                <th class="p-3">Role / Organization</th>
+                                <th class="p-3">Key Operations &amp; Systems</th>
+                                <th class="p-3 text-right">State</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-800">
-                            <tr>
-                                <td class="p-3 text-blue-400">SYS_ADMIN_01</td>
-                                <td class="p-3">Administered School Management System & Data Integrity </td>
-                                <td class="p-3 text-right text-green-500 font-bold">ACTIVE</td>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="p-3 text-amber-300 whitespace-nowrap">2025–2026</td>
+                                <td class="p-3 text-white font-semibold">Warehouse Administrator<br><span class="text-slate-400 font-normal">New Sky Forwarders Philippines Logistics</span></td>
+                                <td class="p-3 space-y-1">
+                                    <div>• Managed inventory management databases; tracked metrics, daily sales &amp; operational expenses.</div>
+                                    <div>• Coordinated client supply chain logistics by booking, tracking &amp; auditing time-sensitive commercial deliveries.</div>
+                                </td>
+                                <td class="p-3 text-right text-green-400 font-bold">LOGGED</td>
                             </tr>
-                            <tr>
-                                <td class="p-3 text-blue-400">ASSET_CTRL</td>
-                                <td class="p-3">Monitored IT Equipment Inventory & Asset Tracking </td>
-                                <td class="p-3 text-right text-green-500 font-bold">VERIFIED</td>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="p-3 text-blue-400 whitespace-nowrap">2022–2024</td>
+                                <td class="p-3 text-white font-semibold">Web Administrator<br><span class="text-slate-400 font-normal">Core Gateway College, Inc.</span></td>
+                                <td class="p-3 space-y-1">
+                                    <div>• Oversaw system migration, configuration &amp; database optimization for legacy and modern School Management Systems.</div>
+                                    <div>• Administered CGCI-IJAMET Online Journal website, executing deployment updates and security patches.</div>
+                                </td>
+                                <td class="p-3 text-right text-green-400 font-bold">DEPLOYED</td>
                             </tr>
-                            <tr>
-                                <td class="p-3 text-blue-400">TECH_INSTR</td>
-                                <td class="p-3">Delivered Computer Science & Technical Subject Instruction </td>
-                                <td class="p-3 text-right text-green-500 font-bold">COMPLETED</td>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="p-3 text-blue-400 whitespace-nowrap">2018–2023</td>
+                                <td class="p-3 text-white font-semibold">Part-time Instructor (Dept. of IT)<br><span class="text-slate-400 font-normal">Core Gateway College, Inc.</span></td>
+                                <td class="p-3 space-y-1">
+                                    <div>• Delivered technical lectures and hands-on laboratory sessions for CS and IT students.</div>
+                                    <div>• Evaluated academic performance via structured grading of assignments, exams &amp; capstone projects.</div>
+                                    <div>• Collaborated with faculty on departmental curriculum updates aligned with industry standards.</div>
+                                </td>
+                                <td class="p-3 text-right text-green-400 font-bold">VERIFIED</td>
                             </tr>
-                            <tr>
-                                <td class="p-3 text-blue-400">HW_TROUBLE</td>
-                                <td class="p-3">Troubleshot hardware, software, and system issues </td>
-                                <td class="p-3 text-right text-green-500 font-bold">RESOLVED</td>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="p-3 text-blue-400 whitespace-nowrap">2017–2023</td>
+                                <td class="p-3 text-white font-semibold">Network Administrator<br><span class="text-slate-400 font-normal">Core Gateway College, Inc.</span></td>
+                                <td class="p-3 space-y-1">
+                                    <div>• Architected and maintained campus-wide network infrastructure for secure, stable data connectivity.</div>
+                                    <div>• Provided localized hardware, routing &amp; troubleshooting support across administrative offices.</div>
+                                </td>
+                                <td class="p-3 text-right text-green-400 font-bold">UPTIME_OK</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
 
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-sm font-bold text-slate-500 mb-4 uppercase tracking-widest">// Technical_Competencies </h2>
-                    <div class="space-y-4">
-                        <div class="text-[10px]">
-                            <div class="flex justify-between mb-1"><span>MIS & ADMIN SUPPORT </span><span>100%</span></div>
-                            <div class="w-full bg-slate-800 h-1"><div class="bg-blue-500 h-1 w-full"></div></div>
+            <!-- CERTIFICATIONS, TRAININGS & WORKSHOPS -->
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-slate-900/50 p-6 border border-slate-800 rounded">
+                    <h2 class="text-sm font-bold text-blue-400 mb-4 uppercase tracking-wider">
+                        <i class="fas fa-certificate mr-2"></i>Certifications &amp; Prof_Dev
+                    </h2>
+                    <ul class="text-[11px] space-y-2 text-slate-300">
+                        <li><span class="text-green-400">[2026]</span> Data Privacy Awareness — DICT</li>
+                        <li><span class="text-green-400">[2026]</span> Python Fundamentals &amp; Object-Oriented Programming — Ground Gurus</li>
+                        <li><span class="text-green-400">[2026]</span> Web Development for Beginners (HTML, CSS &amp; JS Fundamentals) — Ground Gurus</li>
+                        <li><span class="text-green-400">[2026]</span> Cybersecurity Essentials Bootcamp — Informatics</li>
+                        <li><span class="text-green-400">[2026]</span> Basic Cybersecurity Seminar — The Fence Defense Training Services</li>
+                        <li><span class="text-blue-300">[2022]</span> Introduction to After Effects — DICT</li>
+                        <li><span class="text-blue-300">[2022]</span> Creating Instructional Videos and Distance Learning Featuring Loom — DICT</li>
+                        <li><span class="text-blue-300">[2022, 2020, 2015]</span> Youth Congress on Information Technology (Y4IT) National Congresses — UP System IT Foundation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900/50 p-6 border border-slate-800 rounded">
+                    <h2 class="text-sm font-bold text-blue-400 mb-4 uppercase tracking-wider">
+                        <i class="fas fa-terminal mr-2"></i>Trainings &amp; Workshops
+                    </h2>
+                    <ul class="text-[11px] space-y-3 text-slate-300 mb-8">
+                        <li class="p-3 bg-slate-950/70 border border-slate-800 rounded">
+                            <span class="text-blue-400 font-semibold">[2021]</span> PHEI Web Hosting Services &amp; Domain Name System Training — DICT Luzon Cluster 2
+                        </li>
+                        <li class="p-3 bg-slate-950/70 border border-slate-800 rounded">
+                            <span class="text-blue-400 font-semibold">[2018]</span> Consultation-Workshop on Higher Education Data Elements Collection — Subic, Zambales
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider">
+                        <i class="fas fa-address-book mr-2 text-blue-400"></i>Character_References
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-[10px]">
+                        <div class="p-3 bg-slate-950/70 border border-slate-800 rounded">
+                            <p class="font-bold text-white">ANGELITA MACAM</p>
+                            <p class="text-blue-300 mt-0.5">CGCI Alumni Relations Officer</p>
+                            <p class="text-slate-400">Core Gateway College, Inc.</p>
+                            <p class="text-slate-300 mt-1">0945 500 2012 / 0919 829 6108</p>
                         </div>
-                        <div class="text-[10px]">
-                            <div class="flex justify-between mb-1"><span>RECORDS & DATABASE MGMT</span><span>95%</span></div>
-                            <div class="w-full bg-slate-800 h-1"><div class="bg-blue-500 h-1 w-[95%]"></div></div>
+                        <div class="p-3 bg-slate-950/70 border border-slate-800 rounded">
+                            <p class="font-bold text-white">APPLE GRACE TACMO</p>
+                            <p class="text-blue-300 mt-0.5">Human Resource - Admin</p>
+                            <p class="text-slate-400">Core Gateway College, Inc.</p>
+                            <p class="text-slate-300 mt-1">0955 759 8635</p>
                         </div>
-                        <div class="text-[10px]">
-                            <div class="flex justify-between mb-1"><span>GRAPHIC LAYOUT & DESIGN </span><span>85%</span></div>
-                            <div class="w-full bg-slate-800 h-1"><div class="bg-blue-500 h-1 w-[85%]"></div></div>
+                        <div class="p-3 bg-slate-950/70 border border-slate-800 rounded">
+                            <p class="font-bold text-white">HAZEL SAMBRANO</p>
+                            <p class="text-amber-300 mt-0.5">Operations / Logistics</p>
+                            <p class="text-slate-400">New Sky Express Forwarders Philippines</p>
+                            <p class="text-slate-300 mt-1">0906 843 7418</p>
                         </div>
                     </div>
-                </div>
-                <div class="bg-blue-900/10 p-6 border border-blue-900/30 rounded">
-                    <h2 class="text-sm font-bold text-blue-400 mb-2 uppercase">System_Notices</h2>
-                    <p class="text-[10px] leading-relaxed">
-                        > Recognized for consistent and reliable technical and administrative support across multiple departments.<br>
-                        > Graduated with distinction as Senior Programmer.<br>
-                        > Expert in Microsoft Office & Google Workspace.
-                    </p>
                 </div>
             </section>
 
         </div>
-        
-        <footer class="bg-slate-900/50 p-6 text-center border-t border-slate-800">
-            <p class="text-[10px] uppercase tracking-[0.2em] mb-2">Request Connection via jrandynisperos@gmail.com</p>
-            <p class="text-[9px] text-slate-600">© 2026 NISPEROS_TECH_RESOURCES. ALL_RIGHTS_RESERVED.</p>
+
+        <!-- FOOTER -->
+        <footer class="bg-slate-900/70 p-6 text-center border-t border-slate-800">
+            <p class="text-[10px] uppercase tracking-[0.2em] mb-2 text-slate-300">
+                Contact: <a href="mailto:jrandynisperos@gmail.com" class="text-blue-400 hover:underline">jrandynisperos@gmail.com</a> | 0954-107-6865
+            </p>
+            <p class="text-[9px] text-slate-600">© 2026 JON RANDY M. NISPEROS // TALAVERA, NUEVA ECIJA</p>
         </footer>
     </main>
 
